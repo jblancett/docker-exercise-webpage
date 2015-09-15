@@ -41,10 +41,18 @@ $ eval "$(docker-machine env demo)"
 $ docker build -t exercise-webpage .
 ```
 
-Once container is built, run it:
+Kill any already running containers:
+```console
+$ docker ps -q | xargs docker kill
+````
+
+Run the container:
 ```console
 $ docker run -dp 8000:80 exercise-webpage
 2e9ef239d27a43c0a8951197060a820d9ef6650f9c7788716019df23ea0f9c44
 ```
+
+Did it work?
+
 
 ## Step 4: Profit!
