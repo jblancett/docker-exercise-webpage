@@ -53,6 +53,8 @@ $ docker run -dp 8000:80 exercise-webpage
 ```
 
 Did it work?
-
+```console
+$ curl http://192.168.99.100:8000
+```
 
 ## Step 4: Profit!
